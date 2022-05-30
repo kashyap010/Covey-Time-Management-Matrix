@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covey Time Management Matrix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container" data-num="4"><h1>Stephen Covey Time Management Matrix</h1></div>
+
+    <div class="container">
+        <h5 class="urgent">Urgent</h5>
+        <h5 class="not-urgent">Not Urgent</h5>
+        <h5 class="important">Important</h5>
+        <h5 class="not-important">Not Important</h5>
+        
+        <div class="quadrant-1" data-num="0">
+            <h2>Urgency</h2>
+            <div class="quadrant-tasks"></div>
+
+            <div class="input-container">
+                <div><input type="text"></div>
+                <div>
+                    <div class="add-task" onclick="addTask(this);" data-num="0"><i class="fas fa-plus fa-lg"></i></div>
+                    <div class="cancel-task" onclick="toggleInput(0);"><i class="fas fa-x fa-lg"></i></div>
+                </div>
+            </div>
+
+            <div class="add-icon" onclick="toggleInput(0);"><i class="fa fa-plus"></i> Add Item</div>
+        </div>
+
+        <div class="quadrant-2" data-num="1">
+            <h2>Quality</h2>
+            <div class="quadrant-tasks"></div>
+
+            <div class="input-container">
+                <div><input type="text"></div>
+                <div>
+                    <div class="add-task" onclick="addTask(this);" data-num="1"><i class="fas fa-plus fa-lg"></i></div>
+                    <div class="cancel-task" onclick="toggleInput(1);"><i class="fas fa-x fa-lg"></i></div>
+                </div>
+            </div>
+
+            <div class="add-icon" onclick="toggleInput(1);"><i class="fa fa-plus"></i> Add Item</div>
+        </div>
+
+        <div class="quadrant-3" data-num="2">
+            <h2>Distraction</h2>
+            <div class="quadrant-tasks"></div>
+
+            <div class="input-container">
+                <div><input type="text"></div>
+                <div>
+                    <div class="add-task" onclick="addTask(this);" data-num="2"><i class="fas fa-plus fa-lg"></i></div>
+                    <div class="cancel-task" onclick="toggleInput(2);"><i class="fas fa-x fa-lg"></i></div>
+                </div>
+            </div>
+
+            <div class="add-icon" onclick="toggleInput(2);"><i class="fa fa-plus"></i> Add Item</div>
+        </div>
+
+        <div class="quadrant-4" data-num="3">
+            <h2>Waste</h2>
+            <div class="quadrant-tasks"></div>
+
+            <div class="input-container">
+                <div><input type="text"></div>
+                <div>
+                    <div class="add-task" onclick="addTask(this);" data-num="3"><i class="fas fa-plus fa-lg"></i></div>
+                    <div class="cancel-task" onclick="toggleInput(3);"><i class="fas fa-x fa-lg"></i></div>
+                </div>
+            </div>
+
+            <div class="add-icon" onclick="toggleInput(3);"><i class="fa fa-plus"></i> Add Item</div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
