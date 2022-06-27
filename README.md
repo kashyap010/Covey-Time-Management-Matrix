@@ -1,7 +1,7 @@
 # Covey-Time-Management-Matrix
 Use the power of Drag-and-Drop API to easily schedule your time using the Covey Time Management Matrix
 
-![covey-time-matrix-Made-with-Clipchamp](https://user-images.githubusercontent.com/106474125/175788872-eb02589e-14f8-4e70-a812-41e275b67f07.gif)
+![covey-matrix-Made-with-Clipchamp](https://user-images.githubusercontent.com/106474125/175925759-23ec99b9-bfc9-4466-b6d3-a5ea8b5f15cd.gif)
 
 Your tasks are saved in local storage so that you don't lose your progress
 
